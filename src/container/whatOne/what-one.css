@@ -1,0 +1,116 @@
+.one__whatone {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 1440px;
+    margin: 4rem auto;
+
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 1px 40px 0px rgba(227, 222, 255, 0.20) inset, 0px 4px 18px 0px rgba(154, 146, 210, 0.10) inset, 0px 98px 100px -48px rgba(202, 172, 255, 0.10) inset, 0px -62px 68px -64px rgba(96, 68, 144, 0.10) inset, 0px 7px 11px -4px rgba(255, 255, 255, 0.2) inset, 0px 39px 56px -36px rgba(255, 255, 255, 0.30) inset;
+    backdrop-filter: blur(50px);
+}
+
+.one__whatone-feature {
+    display: flex;
+}
+
+.one__whatone-feature .one__features-container__feature {
+    margin: 0;
+}
+
+.one__whatone-feature .one__features-container__feature-text {
+    max-width: 700px;
+}
+
+.one__whatone-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.one__whatone-heading h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.one__whatone-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.one__whatone-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.one__whatone-container .one__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.one__whatone-container .one__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .one__whatone {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .one__whatone {
+        margin: 4rem;
+    }
+
+    .one__whatone-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .one__whatone-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .one__whatone {
+        margin: 2rem;
+    }
+
+    .one__whatone-feature .one__features-container__feature {
+        flex-direction: column;
+    }
+
+    .one__whatone-feature .one__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .one__whatone-heading h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .one__whatone-container .one__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

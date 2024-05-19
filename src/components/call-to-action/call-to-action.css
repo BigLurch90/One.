@@ -1,0 +1,80 @@
+.one__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 4rem;
+    max-width: 1440px;
+    width: 100%;
+    margin: 6rem auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 1px 40px 0px rgba(227, 222, 255, 0.20) inset, 0px 4px 18px 0px rgba(154, 146, 210, 0.10) inset, 0px 98px 100px -48px rgba(202, 172, 255, 0.10) inset, 0px -62px 68px -64px rgba(96, 68, 144, 0.10) inset, 0px 7px 11px -4px rgba(255, 255, 255, 0.2) inset, 0px 39px 56px -36px rgba(255, 255, 255, 0.30) inset;
+    backdrop-filter: blur(50px);
+}
+
+.one__cta-content p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.one__cta-content h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.one__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.one__cta-button button {
+    background: #0e0e0e;
+    color: #f2f2f2;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: 0;
+    outline: none;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    min-width: 150px;
+    transition: all 0.3s ease-in;
+}
+
+.one__cta-button button:hover {
+    background: var(--color-subtext);
+    color: var(--color-footer);
+}
+
+@media screen and (max-width: 1440px) {
+    .one__cta {
+        border-radius: 0;
+    }    
+}
+
+@media screen and (max-width: 650px) {
+    .one__cta {
+        flex-direction: column;
+    }
+
+    .one__cta-button {
+        margin: 2rem 0 0;
+    }
+    
+}
+
+@media screen and (max-width: 550px) { 
+    .one__cta {
+        text-align: center;
+    }
+}
